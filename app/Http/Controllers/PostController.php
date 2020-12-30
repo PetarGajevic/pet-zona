@@ -102,6 +102,38 @@ class PostController extends Controller
                 ->withSuccess("Updated successfully!")
                 ->withInput();
     }
+
+    public function show(Request $request, Post $post){
+        
+        return view("show", ['post' => $post]);
+    }
+
+
+    public function sendEmail(Request $request)
+    {
+
+        dd("A");
+        $request->validate([
+          'email' => 'required|email',
+          'subject' => 'required',
+          'name' => 'required',
+          'content' => 'required',
+        ]);
+
+        $data = [
+          'subject' => $request->subject,
+          'name' => $request->name,
+          'email' => $request->email,
+          'content' => $request->content
+        ];
+
+        Mail::send('email-template', $data, function($message) use ($data) {
+          $message->to($data['email'])
+          ->subject($data['subject']);
+        });
+
+        return view('about')->with(['message' => 'Email successfully sent!']);
+    }
    
 
 }
