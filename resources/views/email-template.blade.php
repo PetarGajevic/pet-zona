@@ -9,7 +9,10 @@
                             {{ __('A fresh mail has been sent to your email address.') }}
                         </div>
                     @endif
-                    
+                
+                    <div>   Email from : {{ $email }}   </div>
+                   <div>    Message : {{ $messageT }}  </div>
+                  
                 </div>
             </div>
         </div>

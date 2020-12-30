@@ -21,13 +21,19 @@ class EmailController extends Controller
 
         $data = [
           'email' => $request->email,
-          'message' => $request->message
+          'messageT' => $request->message
         ];
 
-        Mail::send('email-template', $data, function($message) use ($data) {
+   /*      Mail::send('test.qqriq@gmail.com', $data, function($message) use ($data) {
           $message->to($data['email']);
-        });
-        
-        return back()->with(['message' => 'Email successfully sent!']);
+        }); */
+
+        Mail::send('email-template', $data, function ($message) use ($request) {
+          $message->to('test.qqriq@gmail.com', 'Receiver Name')
+              ->from($request->email)
+              ->subject('Pet Zoona');
+      });
+        return redirect()->back()->with(['message' => 'Email successfully sent!']);
+
     }
 }
