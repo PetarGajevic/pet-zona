@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Pet Zoona</title>
 
 
         <!-- Fonts -->
@@ -120,9 +120,9 @@
                         </div>
                         <div class="social-div-right">
                           <ul style="width: 120px; margin-top: 24px;">
-                            <li><img src="site-images/Drop_down_strelica.svg"><a>Instagram</a></li>
-                            <li><img src="site-images/Drop_down_strelica.svg"><a>Youtube</a></li>
-                            <li><img src="site-images/Drop_down_strelica.svg"><a>Facebook</a></li>
+                            <li><img src="site-images/Drop_down_strelica.svg"><a  target="_blank" href="https://www.instagram.com/petzoonapg/">Instagram</a></li>
+                            <li><img src="site-images/Drop_down_strelica.svg"><a  target="_blank" href="#">Youtube</a></li>
+                            <li><img src="site-images/Drop_down_strelica.svg"><a target="_blank" href="https://www.facebook.com/petzoonapg/">Facebook</a></li>
                           </ul>
                         </div>
                     </div>
