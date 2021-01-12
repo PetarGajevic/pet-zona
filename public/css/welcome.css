@@ -534,6 +534,14 @@ textarea{
         display: none!important;
     }
 
+    .navbar{
+        display: flex!important;
+    }
+
+    .dog-left{
+        display: none;
+    }
+
     .social-fixed{
         width: 90%;
         position: absolute;

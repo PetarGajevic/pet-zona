@@ -37,7 +37,7 @@
         </style>
     </head>
 
-{{--     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 0; padding-right: 0;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 0; padding-right: 0; display:none;">
       <a class="navbar-brand" href="#"><img src="site-images/pet zoona LOGO vector horizontalni i vertikalni copy.svg" height="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
         <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
           </li>
         </ul>
       </div>
-    </nav> --}}
+    </nav>
 
             <div class="div-main">
                 <div class="navigation-left" id="navigation-left">

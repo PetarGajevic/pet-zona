@@ -1,0 +1,47 @@
+@media only screen and (max-width: 730px) {
+
+.dog-right{
+    margin-left: 0px!important;
+    width: 100%;
+}
+
+.dog-blog-main{
+    width: 100%!important;
+}
+
+.dog-blog{
+    margin-left: 15px;
+}
+
+.blog-sound{
+    display: none;
+}
+
+.blog-date{
+    margin-right: 40px!important;
+    margin-bottom: 0px;
+}
+
+.dog-categories{
+    text-align: center;
+}
+
+.dog-categories ul li{
+     padding: 5px 5px 5px 5px!important; 
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.dog-categories ul{
+    padding-left: 0px;
+}
+
+.dog-categories ul li a{
+   display: inline-block;
+   width: 85px;
+}
+
+
+}

@@ -94,8 +94,8 @@
                                 <a href="/posts/{{$posts->id}}">
                                 <h3>Mačor</h3>
                                 <div class="dog-date">
-                                  <p style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
-                                  <p style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
+                                  <p class="blog-date" style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
+                                  <p class="blog-sound" style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
                                   <img src="site-images/iconfinder_volume_audio_music_sound_5402437.svg">
                                 </div>
                               </a>
@@ -107,8 +107,8 @@
                                 <a href="/posts/{{$posts->id}}">
                                 <h3>Mačor</h3>
                                 <div class="dog-date">
-                                  <p style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
-                                  <p style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
+                                  <p class="blog-date" style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
+                                  <p class="blog-sound" style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
                                   <img src="site-images/iconfinder_volume_audio_music_sound_5402437.svg">
                                 </div>
                                 </a>
@@ -120,8 +120,8 @@
                                 <a href="/posts/{{$posts->id}}">
                                 <h3>Mačka</h3>
                                 <div class="dog-date">
-                                  <p style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
-                                  <p style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
+                                  <p class="blog-date" style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
+                                  <p class="blog-sound" style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
                                   <img src="site-images/iconfinder_volume_audio_music_sound_5402437.svg">
                                 </div>
                                 </a>
@@ -133,8 +133,8 @@
                                 <a href="/posts/{{$posts->id}}">
                                 <h3>Mačka</h3>
                                 <div class="dog-date">
-                                  <p style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
-                                  <p style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
+                                  <p class="blog-date" style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
+                                  <p class="blog-sound" style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
                                   <img src="site-images/iconfinder_volume_audio_music_sound_5402437.svg">
                                 </div>
                                 </a>
@@ -146,8 +146,8 @@
                                 <a href="/posts/{{$posts->id}}">
                                 <h3>Mačka</h3>
                                 <div class="dog-date">
-                                  <p style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
-                                  <p style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
+                                  <p class="blog-date" style="margin-right: 80px; color:#F6921B;">Blog je objavljen 20. decembra 2020</p>
+                                  <p class="blog-sound" style="margin-right: 10px;">Dostupan zvucni sadrzaj</p>
                                   <img src="site-images/iconfinder_volume_audio_music_sound_5402437.svg">
                                 </div>
                                 </a>
