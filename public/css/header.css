@@ -1,0 +1,283 @@
+/* Navbar mobile
+-------------------------------------------------- */
+
+.st-navbar-static-top {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .st-navbar-mobile {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    z-index: auto;
+  }
+  .st-navbar-mobile:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  
+  
+  /* Navbar mobile header
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-header {
+      width: 100%;
+    height: 60px;
+  }
+  
+  
+  
+  /* Navbar mobile header logo
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-header-img {
+      float: left;
+      margin: 17px 0 0;
+  }
+  .st-navbar-mobile-header-img > img {
+      width: 115px;
+      height: 26px;
+  }
+  
+  
+  
+  /* Navbar mobile header menu
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-header-menu {
+      float: right;
+  }
+  .st-navbar-mobile-header-menu-nav {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+  }
+  .st-navbar-mobile-header-menu-nav li {
+      float: left;
+  }
+  .st-navbar-mobile-header-menu-nav li a {
+      font-size: 22px;
+      line-height: 0;
+      padding: 0px 15px 0px 15px;
+      margin: 0;
+      border: 0;
+      display: block;
+      cursor: pointer;
+  }
+  .st-navbar-mobile-header-menu-nav li:first-child a {
+      padding-left: 0;
+  }
+  .st-navbar-mobile-header-menu-nav li:last-child a {
+      padding-right: 0;
+  }
+  
+  
+  
+  /* Navbar mobile nav collapse
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-nav-collapse {
+    display: none;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  
+  
+  /* Navbar mobile nav
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-nav {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    z-index: auto;
+  }
+  .st-navbar-mobile-nav:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu {
+    position: static;
+    float: none;
+    display: none;
+    list-style: none;
+    width: auto;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+      z-index: 1000;
+  }
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu:before {
+      content: ''; 
+      display: block;
+      position: absolute;
+      top: 0; 
+      right: 0; 
+      bottom: 0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  .st-navbar-mobile-nav > li > a {
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+  .st-navbar-mobile-nav > li > a.st-submenu-toggle {
+      float: right;
+    display: block;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu > li > a {
+    display: block;
+    font-size: 13px;
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      padding-left: 31px;
+  }
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu > li > ul > li > a {
+      display: block;
+    font-size: 13px;
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      padding-left: 47px;
+  }
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu > li > a.st-submenu-toggle,
+  .st-navbar-mobile-nav .st-navbar-mobile-dropdown-menu > li > ul > li > a.st-submenu-toggle {
+      float: right;
+    display: block;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  
+  
+  
+  /* Navbar mobile nav dropdowns icon animation
+  -------------------------------------------------- */
+  
+  .st-navbar-mobile-nav li.st-submenu-parent > a.st-submenu-toggle > i {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .st-navbar-mobile-nav li.st-submenu-open > a.st-submenu-toggle > i {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  
+  
+  
+  /* Navbar mobile all styles
+  -------------------------------------------------- */
+  
+  /*** Navbar mobile ***/
+  .st-navbar-mobile {
+      color: #676767;
+  }
+  .st-navbar-mobile:before {
+    background-color: rgba(33,33,33,0.8);
+  }
+  
+  
+  /*** Navbar mobile header menu ***/
+  .st-navbar-mobile-header-menu-nav li a {
+      /*background-color: #111111;*/
+      color: #ffffff;
+  }
+  .st-navbar-mobile-header-menu-nav li a.st-navbar-mobile-toggle.open {
+      color: #aaaaaa;
+  }
+  .st-navbar-mobile-header-menu-nav li a:hover,
+  .st-navbar-mobile-header-menu-nav li a:focus {
+      /*background-color: transparent;*/
+      color: #aaaaaa;
+  }
+  .st-navbar-mobile-header-menu-nav li+li {
+      border-left: 1px solid #ffffff;
+  }
+  
+  
+  /*** Navbar mobile nav ***/
+  .st-navbar-mobile-nav:before {
+    background-color: #333333;
+  }
+  .st-navbar-mobile-nav li {
+    border-top: 1px solid #272727;
+  }
+  
+  
+  /*** Navbar mobile nav a ***/
+  .st-navbar-mobile-nav li > a,
+  .st-navbar-mobile-nav li > a > i {
+    color: #dddddd;
+      background-color: #333333;
+  }
+  
+  
+  /*** Navbar mobile nav a:hover ***/
+  .st-navbar-mobile-nav li > a:hover,
+  .st-navbar-mobile-nav li > a:hover > i {
+    color: #aaaaaa;
+    background-color: #3e3e3e;
+  }
+  
+  
+  /*** Navbar mobile nav a:focus ***/
+  .st-navbar-mobile-nav li > a:focus,
+  .st-navbar-mobile-nav li > a:focus > i {
+    color: #aaaaaa;
+    background-color: #3e3e3e;
+  }
+  
+  
+  /*** Navbar mobile nav dropdows a:hover ***/
+  .st-navbar-mobile-nav li.st-submenu-open > a:hover,
+  .st-navbar-mobile-nav li.st-submenu-open > a:hover > i {
+    color: #aaaaaa;
+    background-color: #3e3e3e;
+  }
+  
+  
+  /*** Navbar mobile nav dropdows a:focus ***/
+  .st-navbar-mobile-nav li.st-submenu-open > a,
+  .st-navbar-mobile-nav li.st-submenu-open > a > i,
+  .st-navbar-mobile-nav li.st-submenu-open > a:focus,
+  .st-navbar-mobile-nav li.st-submenu-open > a:focus > i {
+    color: #aaaaaa;
+    background-color: #3e3e3e;
+  }

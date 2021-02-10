@@ -41,5 +41,7 @@ class Post extends Model
                }
                return false;
              }
-
+             public function tags(){
+              return $this->belongsToMany(Tag::class, 'post_tag');
+            }
 }

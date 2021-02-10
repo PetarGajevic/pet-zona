@@ -18,7 +18,9 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('image');
-            $table->integer('category_id')->references('id')->on('categories');
+            $table->integer('category_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

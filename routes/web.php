@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Auth;
 use App\Models\Category;
 use App\Models\Post;
+
 use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,8 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $categories = Category::all();
+    return view('welcome',compact('categories'));
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -25,28 +27,28 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('/blog', function () {
+/* Route::get('/blog/{id}', function () {
     $posts = Post::first();
-    return view('blog')->with('posts', $posts);
+    $categories = Category::all();
+    return view('blog',compact('posts','categories'));
 });
 
 Route::get('/blog-cats', function () {
     $posts = Post::first();
-    return view('blog-cats')->with('posts', $posts);
-});
+    $categories = Category::all();
+
+    return view('blog-cats',compact('posts','categories'));
+});  */
 
 Route::post('/email', 'App\Http\Controllers\EmailController@sendEmail')->name('send.email');
 
 
 Route::get('/about', function () {
-    return view('about');
+    $categories = Category::all();
+
+    return view('about',compact('categories'));
 });
 
-
-
-
-
-
-
-    Route::resource('posts', PostController::class);
+Route::get('/category/{id}', [PostController::class, 'category'])->name('category.posts');
+Route::resource('posts', PostController::class);
 

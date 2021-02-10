@@ -4,13 +4,37 @@
     display: flex;
     flex-direction: row;
 }
+.h1,h1{
+    font-size: 32px !important;
 
-p{
-    font-family: Fire Sans;
 }
+.h2,h2{
+    font-size: 24px !important;
 
-nav{
-    font: normal normal normal 20px Fira Sans;
+}
+.h3,h3{
+    font-size: 18px !important;
+
+}
+.h4,h4{
+    font-size: 16px !important;
+
+}
+.p,p{
+    font-size: 16px !important;
+}
+body{
+    font-family: 'Fira Sans', sans-serif !important;
+
+}
+   .blog-date{
+  margin-right: 80px;
+    }
+.dog-blog a{
+    color: black !important;
+}
+.navigation-left a{
+    color: white !important;
 }
 
 li { cursor: pointer; }
@@ -35,35 +59,34 @@ li { cursor: pointer; }
 }
 
 .pet-blog{
- margin-left: 30px;
- 
+ margin-left: 20px;
+ margin-top: auto;
+ margin-bottom: auto;
 } 
 
-.pet-blog p{
+.pet-blog h2{
     -webkit-transform: rotate(270deg);   
 -moz-transform: rotate(270deg);
 -ms-transform: rotate(270deg);
 -o-transform: rotate(270deg);
 transform: rotate(270deg);
 margin-left: -50px;
-margin-top: 140px;
-font-size: 20px;
   
 }
 
 .about-us{
     margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.about-us p{
+.about-us h2{
     -webkit-transform: rotate(270deg);   
     -moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     transform: rotate(270deg);
     margin-left: -50px;
-    margin-top: 80px;
-    font-size: 20px;
 }
 
 .social{
@@ -78,11 +101,11 @@ font-size: 20px;
 }
 
 .social-div{
-    height: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 35px;
-    margin-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .fab{
@@ -124,6 +147,8 @@ font-size: 20px;
     width: 120px;
     margin-left: 50px;
     display: none;
+    margin-top: auto;
+    margin-bottom: auto;
 } 
 
 .about-us-right:hover{
@@ -133,6 +158,8 @@ font-size: 20px;
  .pet-blog-right{
     width: 120px;
     margin-left: 10px;
+    place-self: center;
+    align-self: center;
     z-index: 1;
     display: none;
 } 
@@ -148,6 +175,9 @@ padding-bottom: 25px;
 .pet-blog-right ul{
     list-style-type: none;
     padding-left: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
 }
 
 .about-us-main:hover{
@@ -214,7 +244,6 @@ padding-bottom: 25px;
 
 .custom-p{
     margin-top: 0px;
-    font-size: 12px;
     font-weight: bold;
     color: #707070;
 }
@@ -259,10 +288,7 @@ padding-bottom: 25px;
     margin: auto;
 }
 
-.about-main p{
-    font-family: Fira Sans;
-    font-size: 15px;
-}
+
 
 .about-coo-right{
     width: 80%;
@@ -301,10 +327,14 @@ padding-bottom: 25px;
     display: inline-block;
 }
 
+.dog-categories {
+  margin-bottom: 2%;
+}
+
 .dog-categories ul li{
     display: inline;
     padding-right: 30px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .dog-categories{
@@ -313,26 +343,25 @@ padding-bottom: 25px;
 
 .dog-right{
     width: 80%;
-    margin-left: 250px;
+    margin-left: 290px;
 }
 
 .dog-right ul li{
     display: inline;
     padding-right: 30px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .dog-blog{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
     margin-bottom: 10px;
     -webkit-transition: margin 0.5s;
     -moz-transition: margin 0.5s;
 }
 
 .dog-blog:hover{
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .dog-date{
@@ -345,10 +374,13 @@ padding-bottom: 25px;
 }
 
 .dog-blog-main{
-width: 90%;
 border-bottom: 0.5px solid #e2e8f0;
 }
-
+.more-blogs{
+    width: 75%;
+    margin-left: 200px;
+    margin-top: 3%;
+}
 .social:hover{
     width: 280px;
     z-index: 1;
@@ -362,6 +394,8 @@ border-bottom: 0.5px solid #e2e8f0;
     width: 120px;
     margin-left: 70px;
     display: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .social-div-right ul{
@@ -370,7 +404,7 @@ border-bottom: 0.5px solid #e2e8f0;
 }
 
 .social-div-right ul li{
-    padding-bottom: 12px;
+    padding-bottom: 25px;
 }
 
 .social-div-right img {
@@ -507,19 +541,29 @@ textarea{
     padding-bottom: 15px;
 }
 
-#nav-list li a{
-    font-family: Fira Sans;
-}
 
 .posts-main{
     width: 75%;
     margin-left: 200px;
+} 
+.dog-categories li{
+    border-radius: 15px;
+    background-color: #00ACEE;
+    color: white;
+    padding: 6px 35px;
+    margin-right: 12px;
 }
-
+.dog-categories li a{
+  
+    color: white !important;
+   
+}
 .fade {
     opacity: 1!important;
 }
-
+.navbar-light .navbar-toggler {
+border: none;
+}
 
 
 .fade {
@@ -528,8 +572,134 @@ textarea{
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  
+  @media only screen and (min-width: 730px) {
+
+        .desktop{
+            display: block !important;
+        }
+        .mobile{
+            display:  none !important;
+        }
+  }
   @media only screen and (max-width: 730px) {
+    .dog-right {
+        width: 100%;
+        margin-left: 0px; 
+    }
+    .about-ceo-left {
+        width: 100%;
+        margin-right: 0px;
+        z-index: 1;
+    }
+    .about-ceo-right {
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+
+        margin-top: 0px;
+    }
+    .about-ceo {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .contact-main {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 4%;
+        padding-right: 4%;
+        flex-wrap: wrap;
+    }
+    .about-pet-text {
+        width: 92%;
+        margin: auto;
+    }
+    #email {
+        width: 100%;
+       
+        border: 1px solid #707070;
+    }
+    input{
+        border-radius: 5px;
+    }
+    .contact-left {
+        width: 100%;
+    }
+    .contact-right {
+        width: 100%;
+    }
+    .about-pet-title img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-coo {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 4%;
+        padding-right: 4%;
+        flex-direction: row-reverse;
+    }
+    .about-coo-right {
+        width: 100%;
+        border-radius: 5px;
+        margin-right: 0px;
+        background-color: white;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .about-coo-left {
+        width: 100%;
+        z-index: 1;
+    }
+    .navbar-toggler{
+        outline: none;
+    }
+    .social-fixed-main .col-4{
+        height: 100%;
+    }
+    .navbar-brand img {
+        padding-left: 15px;
+    }
+    .dog-blog:hover{
+        margin-left: 5px;
+    }
+    .navbar a{
+        color: white;
+    }
+    .right-side{
+        margin-bottom:50px ;
+       }
+    .dog-blog {
+        margin-left: 0%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .more-blogs{
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .posts-main {
+        width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .blog-date{
+        margin-right: 2px;
+    }
     #navigation-left{
         display: none!important;
     }
@@ -537,14 +707,19 @@ textarea{
     .navbar{
         display: flex!important;
     }
-
+    .desktop{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
     .dog-left{
         display: none;
     }
 
     .social-fixed{
         width: 90%;
-        position: absolute;
+        position: fixed;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -553,26 +728,25 @@ textarea{
         text-align: center;
         background-color: #00ACEE;
         border-radius: 9px;
-        height: 45px;
+        z-index: 50;
+        height: 49px;
     }
 
     .social-fixed-main{
-        margin-top: 10px;
-    }
+        width: 60%;
+        height: 80%;
+        margin-top: 6px !important;
+        }
 
     .social-fixed img{
-        margin-right: 20px;
+    height: 100%;
+    width: 100%
     }
   }
 
   @media only screen and (min-height: 830px) {
-    .about-us p{
-        margin-top: 90px;
-    }
+  
 
-    .pet-blog p{
-        margin-top: 155px;
-    }
 
     .pet-blog-right li {
         padding-bottom: 40px;
@@ -584,13 +758,9 @@ textarea{
   }
 
   @media only screen and (min-height: 930px) {
-    .about-us p{
-        margin-top: 105px;
-    }
 
-    .pet-blog p{
-        margin-top: 175px;
-    }
+
+   
 
     .pet-blog-right li {
         padding-bottom: 45px;
@@ -610,9 +780,7 @@ textarea{
         margin-top: 115px;
     }
 
-    .pet-blog p{
-        margin-top: 190px;
-    }
+ 
 
     .pet-blog-right li {
         padding-bottom: 55px;
